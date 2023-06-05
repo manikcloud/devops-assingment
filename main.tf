@@ -12,7 +12,7 @@ resource "docker_container" "web" {
   image = docker_image.nginx.latest
   volumes {
     container_path = "/usr/share/nginx/html"
-    host_path      = "./index.html"
+    host_path      = "${path.module}/index.html"
     read_only      = false
   }
   ports {
