@@ -1,5 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
+# Ignore Jenkins shared volume
+/jenkins_home/
 
 # .tfstate files
 *.tfstate

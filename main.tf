@@ -81,14 +81,3 @@ resource "docker_container" "grafana" {
   }
 }
 
-resource "docker_container" "owasp" {
-  image = "owasp/zap2docker-stable"
-  name  = "owasp"
-  ports {
-    internal = 8080
-    external = 9090
-  }
-  networks_advanced {
-    name = docker_network.web.name
-  }
-}
