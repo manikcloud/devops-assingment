@@ -18,20 +18,26 @@ To clone the repository, run the following command:
 ```
 git clone https://github.com/manikcloud/devops-assingment.git
 ```
+
+
 ## Features
 The assignment includes the following features:
 
-- Creation of a Terraform module to spin up Docker containers with mounts enabled.
-- Two containers are promoted as web servers using Dockerfile and Terraform modules.
-- One container is promoted as a load balancer using Nginx.
-- Load balancing is tested by putting stress on the servers.
 
-### Setup of Jenkins on one container.
-- Configuration of a CI/CD pipeline on Jenkins for the web servers.
-- Testing by making small changes like including headers or changing the background color.
-- Setup of monitoring for all containers using Grafana (or any other open-source tool of your choice).
-- Creation of a separate Terraform module for applying security features to all containers.
-- Harden the servers and block public access to web servers, allowing traffic only through the load balancer.
+- Terraform module to spin up Docker containers with mounts enabled.
+- Two Docker containers functioning as web servers.
+- One Docker container functioning as a load balancer using Nginx.
+- Load balancing testing by putting stress on the servers.
+
+### Jenkins Setup
+- Jenkins is set up on one of the containers.
+- A CI/CD pipeline is configured on Jenkins for the web servers.
+- The pipeline is tested by making small changes such as including headers or changing the background color.Setup of Jenkins on one container.
+
+### Monitoring and Security
+- Monitoring is set up for all containers using Grafana or any other open-source tool of your choice.
+- A separate Terraform module is provided for applying security features to all these containers.
+- Server hardening is implemented to block public access to web servers, allowing traffic only through the load balancer.
 
 ## Conclusion
 The code/scripts provided in this repository are optimized for production deployment.
