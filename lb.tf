@@ -3,7 +3,7 @@ resource "docker_container" "load_balancer" {
   image = docker_image.nginx.latest
   volumes {
     container_path = "/etc/nginx/nginx.conf"
-    host_path      = "/opt/jagdeep/nginx.conf"
+    host_path      = "/home/ubuntu/varun/devops-assingment/"
     read_only      = true
   }
   ports {
