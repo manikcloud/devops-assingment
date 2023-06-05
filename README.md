@@ -32,7 +32,7 @@ The assignment includes the following features:
 ### Jenkins Setup
 - Jenkins is set up on one of the containers.
 - A CI/CD pipeline is configured on Jenkins for the web servers.
-- The pipeline is tested by making small changes such as including headers or changing the background color.Setup of Jenkins on one container.
+- The pipeline is tested by making small changes such as including headers or changing the background color.- Setup of Jenkins on one container.
 
 ### Monitoring and Security
 - Monitoring is set up for all containers using Grafana or any other open-source tool of your choice.

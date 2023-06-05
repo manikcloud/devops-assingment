@@ -65,10 +65,6 @@ resource "docker_container" "jenkins" {
   }
 }
 
-resource "docker_network" "web" {
-  name = "web"
-}
-
 resource "docker_container" "grafana" {
   image = "grafana/grafana"
   name  = "grafana"
@@ -81,3 +77,6 @@ resource "docker_container" "grafana" {
   }
 }
 
+resource "docker_network" "web" {
+  name = "web"
+}
