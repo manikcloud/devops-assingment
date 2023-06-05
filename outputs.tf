@@ -34,7 +34,3 @@ output "jenkins_ip_address" {
 output "grafana_url" {
   value = "http://${docker_container.grafana.ip_address}:3000"
 }
-
-output "owasp_url" {
-  value = "http://${docker_container.owasp.ip_address}:8090"
-}
