@@ -1,0 +1,24 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - web
+
+  app1:
+    image: varunmanik/httpd:green
+    networks:
+      - web
+
+  app2:
+    image: varunmanik/httpd:blue
+    networks:
+      - web
+
+networks:
+  web:
+
